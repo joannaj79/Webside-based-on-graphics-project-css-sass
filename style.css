@@ -1,0 +1,650 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    margin: 0;
+}
+
+header {
+    background: #313234;
+    height: 50px;
+    
+}
+
+header li {
+    display: inline-block;
+}
+
+header> nav ul {
+    padding: 0;
+    list-style-type: none;
+    font-family: Open Sans;
+    display: inline-block;
+    text-align: center;
+    float: right;
+}
+
+header>nav img {
+    padding: 10px 0;
+}
+
+header>nav ul>li>a {
+    height: 50px;
+    padding: 0 20px;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header>nav ul>li>a:hover {
+    color: #44e4ed;
+}
+
+.row::after, .row::before {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row p {
+    text-align: center;
+    margin: 0;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    padding-top: 42vh;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://images.unsplash.com/photo-1538000416583-35c50e541862?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80.jpg);
+}
+
+.slogan {
+    background: rgba(0,0,0, .5);
+    width: 500px;
+    color: white;
+    text-align: left;
+    padding: 10px 10px 10px 10px;
+    float: right;
+}    
+
+.slogan h1 span {
+   font-weight: normal;
+}
+
+.slogan h1 {
+    margin-left: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100;
+}
+
+.icons {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.icons i {
+    height: 75px;
+    width: 75px;
+    color: white;
+    border-radius: 10%;
+    background-color: black;
+    font-size: 40px;
+    margin: 0 auto;
+    cursor: pointer;
+    border: 0;
+    display: inline-block;
+    padding: 15px 15px;
+}
+
+.icons i:hover {
+    background: #44e4ed;
+}
+
+.icons i:hover+h4 {
+    color: #44e4ed;
+    transition: 1s;
+}
+
+.icons h4, p {
+    font-family: 'Raleway', sans-serif;
+}
+
+.icons p {
+    color: grey;
+}
+
+.icons-text {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.icons-text p {
+    color: grey;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.icons-text h1 {
+    font-weight: 800;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+[class*="col-"] {
+    float: left;
+    min-height: 1px; 
+    padding: 0;
+    margin: 0;
+}
+
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+
+.col-offset-1 { margin-left: 8.33%; }
+.col-offset-2 { margin-left: 16.66%; }
+.col-offset-3 { margin-left: 25%; }
+.col-offset-4 { margin-left: 33.33%; }
+.col-offset-5 { margin-left: 41.66%; }
+.col-offset-6 { margin-left: 50%; }
+.col-offset-7 { margin-left: 58.33%; } 
+.col-offset-8 { margin-left: 66.66%; }
+.col-offset-9 { margin-left: 75%; }
+.col-offset-10 { margin-left: 83.33%; }
+.col-offset-11 { margin-left: 91.66%; }
+.col-offset-12 { margin-left: 100%; }
+
+.gallery img {
+    height: 30vh;
+    width: 100%;
+    object-fit: cover; 
+    cursor: default;
+}
+
+.gallery {
+     line-height: 0;
+     padding: 0;     
+}
+
+.layer {
+    height: 30vh;
+    width: 100%;
+}
+
+.gallery .layer .fa {
+    height: 30px;
+    width: 30px;
+    color: black;
+    border-radius: 20%;
+    background-color: white;
+    font-size: 15px;
+    padding: 1px;
+    text-align: center;
+    line-height: 30px;
+    cursor: default;
+    margin: 0 10px;
+}
+
+.gallery .photo {
+    position: relative;
+    height: 30vh;
+}
+
+.photo {
+    position: relative;
+    height: 30vh;
+}
+
+.photo .layer {
+    position: absolute;
+    color: #8a7e7e;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.fa-camera-retro {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+
+.fa-search {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.photo:hover .layer {
+    background-color: rgba(0,0,0, .5);
+    transition: 1s;
+}
+
+
+.object-fit_cover {
+    object-fit: cover;
+    height: 30vh;
+    width:100%;
+}
+
+.team {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    line-height: 20px;
+    padding-left: 60px;
+}
+
+.team img {
+    width: 250px;
+    border-radius: 50%;
+    height: 250px;
+    cursor: default;
+    object-fit: cover;
+    display: inline-block;
+}
+
+.image h5 {
+    font-family: 'Raleway', sans-serif;
+    margin: 10px;
+    color: #4E4E4E;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    padding-right: 30px;
+}
+
+.job-position p {
+    font-size: 25px;
+    color: white;
+    position: relative;
+    top: 40%;
+    text-align: center;
+}
+
+.job-position {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+}
+
+.job-position:hover  {
+    background-color: rgba(0,0,0, .5);
+    transition: 1s;
+}
+
+.promotion {
+    background: #808080;
+    background-image: url(http://www.mamkomputer.info/wp-content/uploads/2016/03/1-3.png);
+    height: 300px;
+}
+
+.promotion img {
+    width: 60%; 
+    height: 250px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.promotion h2 {
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 40px;
+}
+
+.promotion p {
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+ }
+ 
+.statistics .col-3 {
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.statistics .col-3 p {
+    color: black;
+    font-family: 'Baloo Chettan', cursive;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.statistics .col-3 h1 {
+    color: #44e4ed;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
+
+footer {
+    background: #313234;
+    min-width: 100%;
+}
+
+.footer .social .fa {
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 0%;
+    background-color: #44e4ed;
+    font-size: 20px;
+    cursor: pointer;
+    border: 0;
+    display: inline-block;
+    padding: 10px 3px;
+    margin: 4px;
+    text-align: center;
+}
+
+.footer .info h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    float: left;
+}
+
+.footer .info p  {
+    text-align: left;
+    margin: 3px;
+    line-height: 0.5cm;
+    color: #8D8D8D;
+    font-size: 20px;
+    clear: both;
+}
+
+.footer .information span {
+    margin: -30px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #8D8D8D;
+}
+
+.footer .information j {
+    margin: -30px;
+}
+
+.footer .details p {
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.footer h2>span {
+    color: white;
+}
+
+footer h3 {
+    text-align: center;
+    background: black;
+    font-size: 20px;
+    color: #717171;
+    padding: 20px;  
+    margin-bottom: 10px;
+}
+
+/* 768PX AND SMALLER */
+
+@media (max-width: 768px) {
+    
+    header {
+        background: #313234;
+        height: auto;
+        margin-bottom: -45px;
+    }
+
+    header .logo {
+        float: none;
+        text-align: center;
+        display: block;
+    }
+
+    header li {
+    display: block;
+    }
+
+header> nav ul {
+    padding: 0;
+    list-style-type: none;
+    font-family: Open Sans;
+    display: block;
+    text-align: center;
+    float: none;
+}
+
+header>nav ul>li>a {
+    height: 50px;
+    padding: 0 20px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    max-width: 100%;
+    height: auto;
+}
+
+.slogan {
+    max-width: 100%;
+    padding: auto;
+    float: none;
+    margin: 0 auto;
+}    
+
+[class*="col-"] {
+    width: 100%;
+    padding: 0 auto;
+    float: right;
+}
+
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    
+.icons i {
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+    display: block;
+    margin-top: 20px;
+}
+
+.text-center h1 {
+    font-size: 1rem;
+}
+
+.gallery img {
+    height: 100%;
+    max-width: 100%;
+}
+
+.layer {
+    height: auto;
+    max-width: 100%;
+}
+
+.gallery .layer .fa {
+    height: 2rem;
+    width: 2rem;
+    font-size: 1rem;
+}
+
+.gallery .photo {
+    height: auto;
+}
+
+.photo {
+    height: auto;
+}
+
+.fa-camera-retro {
+    top: 50%;
+    left: 30%;
+}
+
+.fa-search {
+    top: 50%;
+    left: 50%;
+}
+
+.team {
+    line-height: 3rem;
+    padding-left: 12rem;
+}
+
+.team img {
+    max-width: 15rem;
+    height: 15rem;
+    display: block;
+}
+
+.image h5 {
+    font-size: 1rem;
+    padding-right: 220px;
+}
+
+.job-position p {
+    font-size: 1rem;  
+ 
+}
+
+.job-position {
+    width: 15rem;
+    height: 15rem;
+
+}
+.promotion {
+    height: auto;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.promotion img {
+    max-width: 50%;
+    height: 20%;
+    text-align: center;
+    padding-left: 120px;
+}
+
+.promotion h2 {
+    font-size: 1rem;
+    float: none;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.promotion p {
+    font-size: 1rem;
+    float: none;
+    text-align: center;
+}
+ 
+ .statistics .col-3 {
+    float: none;
+}
+
+.statistics .col-3 p {
+    font-size: 3rem;
+}
+
+.statistics .col-3 h1 {
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+}
+
+.footer .social {
+    padding-left: 200px;
+    padding-bottom: 10px;
+}
+
+.footer .social .fa {
+    height: 2rem;
+    width: 2rem;
+    font-size: 1rem;
+}
+
+.footer .info h2 {
+    font-size: 1rem;
+    padding-left: 250px;
+}
+
+.footer .info p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.footer .information span {
+    font-size: 1rem;
+    padding-left: 270px;
+}
+
+.footer .details p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.footer .information j {
+    text-align: center;
+}
+
+.footer h2>span {
+     padding-left: 250px;
+}
+
+footer h3 {
+    font-size: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin: 0;
+}
+}
